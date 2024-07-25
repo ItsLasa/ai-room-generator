@@ -8,7 +8,7 @@ function UserInf() {
     const {user}=useUser();
 
   return !user ?  (
-    <Link href={"/room"} className='bg-blue-500'>
+    <Link href={"/room"} className='bg-blue-500 hover:opacity-90 rounded-lg text-white font-semibold px-5 py-3'>
       Log In
     </Link>
   ) :(
