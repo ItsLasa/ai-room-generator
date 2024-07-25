@@ -1,3 +1,4 @@
+import CompareSlider from "@/components/CompareSlider";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,7 +21,7 @@ export default function Home() {
         </Link>
       </div>
       <div>
-        {/* <CompareSlider /> */}
+        <CompareSlider />
       </div>
     </main>
   );
