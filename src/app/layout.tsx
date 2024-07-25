@@ -4,6 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
 import couch from "@/assets/couch.svg"
+import { ClerkProvider } from "@clerk/nextjs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <body className={inter.className + "bg-[#17181c] flex flex-col min-h-screen"}>
         <header className="w-full">
@@ -32,5 +34,6 @@ export default function RootLayout({
         {children}
         </body>
     </html>
+    </ClerkProvider>
   );
 }
