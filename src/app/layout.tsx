@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
     <html lang="en">
-      <body className={inter.className + " bg-black flex flex-col min-h-screen"}>
+      <body className={inter.className + " bg-black flex flex-col min-h-screen container mx-auto"}>
         <header className="w-full">
           <div className=" container border-b p-5 mx-auto flex items-center justify-between">
             <Link  href={"/"} className="flex items-center gap-3">
