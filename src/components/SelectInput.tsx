@@ -1,7 +1,15 @@
+'use client'
+import { useRoom } from '@/store/useStore';
 import React from 'react'
 import Select from 'react-select'
 
 function SelectInput() {
+
+
+    const setRoom=useRoom((state:any)=>state.setRoom);
+  function handleChange(e: any) {
+    setRoom(e.value);
+  }
 
 
     const options = [
@@ -11,9 +19,11 @@ function SelectInput() {
         { value: "kitchen", label: "Kitchen" },
       ];
 
-      
+
   return (
-    <div>SelectInput</div>
+    <div className="w-full">
+    <Select onChange={handleChange} options={options} defaultValue={options[0]} />
+  </div>
   )
 }
 
