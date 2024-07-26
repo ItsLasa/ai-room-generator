@@ -19,6 +19,11 @@ function ThemeOption() {
         { value: "vintage", imgUrl: vintage },
     ]
 
+    function handleClick(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
+        document.querySelector(".selected")?.classList.remove("selected");
+        e.currentTarget.classList.add("selected")
+        setTheme(e.currentTarget.lastChild?.textContent);
+    }
 
   return (
     <div className='grid grid-cols-3 gap-5'>
@@ -37,3 +42,7 @@ function ThemeOption() {
 }
 
 export default ThemeOption
+
+function setTheme(textContent: string | null | undefined) {
+    throw new Error('Function not implemented.');
+}
