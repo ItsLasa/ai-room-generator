@@ -1,6 +1,14 @@
+import { useImage, useOutput, useRoom, useTheme } from '@/store/useStore';
 import React from 'react'
 
 function GenarateBtn() {
+
+  const imageUrl = useImage((state: any) => state.imageUrl);
+  const theme = useTheme((state: any) => state.theme);
+  const room = useRoom((state: any) => state.room);
+  const setOutput = useOutput((state: any) => state.setOutput);
+  const setLoading = setLoading((state: any) => state.setLoading);
+  const setGenerating = setLoading((state: any) => state.setGenerating);
   return (
     <button
     onClick={handleClick}
