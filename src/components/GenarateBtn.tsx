@@ -9,6 +9,23 @@ function GenarateBtn() {
   const setOutput = useOutput((state: any) => state.setOutput);
   const setLoading = setLoading((state: any) => state.setLoading);
   const setGenerating = setLoading((state: any) => state.setGenerating);
+
+  async function handleClick() {
+    if (imageUrl && theme) {
+      setLoading(true);
+      setGenerating(true);
+      const res = await fetch("/api/dream", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          theme,
+          room,
+          imageUrl,
+        }),
+      });
+      
   return (
     <button
     onClick={handleClick}
