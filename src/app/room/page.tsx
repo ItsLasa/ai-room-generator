@@ -1,3 +1,4 @@
+import GenerateBtn from '@/components/GenarateBtn'
 import SelectInput from '@/components/SelectInput'
 import ThemeOption from '@/components/ThemeOption'
 import UploadDnd from '@/components/UploadDnd'
@@ -26,6 +27,7 @@ function page() {
           
         </div>
         {/* <GenerateBtn/> */}
+        <GenerateBtn/>
       </div>
       <div className="md:w-2/3 flex flex-col items-center pb-10">
         <div className="md:flex hidden flex-col gap-5 text-center">
