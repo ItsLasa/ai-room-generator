@@ -1,3 +1,5 @@
+import SelectInput from '@/components/SelectInput'
+import ThemeOption from '@/components/ThemeOption'
 import UploadDnd from '@/components/UploadDnd'
 import React from 'react'
 
@@ -9,16 +11,19 @@ function page() {
       <div className="flex flex-col items-center gap-8 md:w-1/3">
         <div className="flex flex-col items-center gap-5 w-full">
           <h3 className="font-bold text-white text-xl">Upload a photo of your room</h3>
-          {/* <UploadDnd /> */}
+          {/* UploadDnd comp  */}
           <UploadDnd/>
         </div>
         <div className="flex flex-col items-center gap-5 w-full">
           <h3 className="font-bold text-white text-xl">Select Room Type</h3>
-          {/* <SelectInp /> */}
+          {/* SelectInp comp  */}
+          <SelectInput/>
         </div>
         <div className="flex flex-col items-center gap-5 w-full">
           <h3 className="font-bold text-white text-xl">Select Room Theme</h3>
           {/* <ThemeOptions/> */}
+          <ThemeOption/>
+          
         </div>
         {/* <GenerateBtn/> */}
       </div>
