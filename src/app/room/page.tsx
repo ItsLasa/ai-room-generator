@@ -1,6 +1,7 @@
 import UploadDnd from '@/components/UploadDnd'
 import React from 'react'
 
+
 function page() {
   return (
     <div className="container mx-auto py-10">
