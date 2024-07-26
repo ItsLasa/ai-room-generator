@@ -21,7 +21,18 @@ function ThemeOption() {
 
 
   return (
-    <div>ThemeOption</div>
+    <div className='grid grid-cols-3 gap-5'>
+          {
+              themes.map((theme, index) => {
+                  return (
+                      <div onClick={handleClick} key={index} className='cursor-pointer transition-all flex flex-col items-center gap-2 group'>
+                          <Image src={theme.imgUrl} alt='theme'  className='rounded-lg group-hover:opacity-80'/>
+                          <p className='font-semibold text-white'>{theme.value}</p>
+                      </div>
+                  )
+          })
+          }
+    </div>
   )
 }
 
