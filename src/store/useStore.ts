@@ -21,3 +21,10 @@ export const useRoom = create((set) => ({
     output: undefined,
     setOutput: (output: string) => set({output}),
   }));
+
+  export const useLoading = create((set) => ({
+    isLoading: true,
+    setLoading: (opt: boolean) => set({ isLoading: opt }),
+    isGenerating: false,
+    setGenerating:(gen:boolean)=>set({isGenerating:gen}),
+  }));
