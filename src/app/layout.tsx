@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
-import couch from "@/assets/couch.svg"
+import couch from "@/assets/bedroom.png"
 import { ClerkProvider } from "@clerk/nextjs";
 import UserInf from "@/components/UserInf";
 
