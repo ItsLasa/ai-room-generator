@@ -9,6 +9,17 @@ import vintage from "@/assets/vintage.png";
 import Image from 'next/image';
 
 function ThemeOption() {
+
+    const themes = [
+        { value: "coastal", imgUrl: coastal },
+        { value: "modern", imgUrl: modern },
+        { value: "professional", imgUrl: professional },
+        { value: "tribal", imgUrl: tribal },
+        { value: "tropical", imgUrl: tropical },
+        { value: "vintage", imgUrl: vintage },
+    ]
+
+
   return (
     <div>ThemeOption</div>
   )
