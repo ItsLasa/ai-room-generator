@@ -11,3 +11,8 @@ export const useRoom = create((set) => ({
     room: "living room",
     setRoom: (room: string) => set({room}),
   }));
+
+  export const useTheme = create((set) => ({
+    Theme: undefined,
+    setTheme: (theme: string) => set({theme}),
+  }));
